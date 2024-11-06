@@ -103,10 +103,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp RIGHT_BRACE  &trans    &kp DOLLAR  &trans       &trans       &trans       &trans             &kp END   &trans           &trans  &trans
-&trans  &kp LEFT_BRACE   &kp PIPE  &kp AT      &kp PERCENT  &kp CARET    &kp C_POWER  &kp C_VOLUME_DOWN  &kp HOME  &kp C_VOLUME_UP  &trans  &trans
-&trans  &trans           &trans    &trans      &trans       &trans       &trans       &trans             &trans    &trans           &trans  &trans
-                                   &kp LGUI    &mo 0        &kp SPACE    &kp RET      &mo 1              &kp RALT
+&trans  &kp RIGHT_BRACE  &trans    &kp DOLLAR  &trans  &trans       &trans       &trans             &kp END   &trans           &trans  &trans
+&trans  &kp LEFT_BRACE   &kp PIPE  &kp AT      &trans  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp HOME  &kp C_VOLUME_UP  &trans  &trans
+&trans  &trans           &trans    &trans      &trans  &trans       &trans       &trans             &trans    &trans           &trans  &trans
+                                   &kp LGUI    &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
             >;
         };
     };
