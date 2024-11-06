@@ -75,7 +75,7 @@
             bindings = <
 &kp DOUBLE_QUOTES  &kp Q              &kp W                &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O                 &kp P                  &kp BSPC
 &kp LCTRL          &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT          &kp Z              &kp X                &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT               &kp FSLH               &kp CAPSLOCK
+&kp TILDE          &kp Z              &kp X                &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT               &kp FSLH               &kp CAPSLOCK
                                                            &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -90,7 +90,7 @@
             bindings = <
 &trans  &kp RIGHT_BRACKET  &kp PLUS        &kp UP_ARROW    &kp MINUS        &kp LEFT_PARENTHESIS     &kp SLASH  &kp N7        &kp N8        &kp N9        &kp STAR        &kp BSPC
 &trans  &kp LEFT_BRACKET   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp N0     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &kp EQUAL
-&trans  &trans             &trans          &trans          &kp UNDER        &kp TILDE                &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH        &trans
+&trans  &trans             &trans          &trans          &kp UNDER        &trans                   &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH        &trans
                                            &kp LGUI        &mo 0            &kp SPACE                &kp RET    &mo 2         &kp RALT
             >;
         };
@@ -103,10 +103,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &kp AT  &kp DOLLAR  &kp DLLR     &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans  &trans  &kp AT      &kp PERCENT  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans  &trans  &trans      &trans       &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                           &kp LGUI    &mo 0        &kp SPACE    &kp RET    &mo 1      &kp RALT
+&trans  &kp RIGHT_BRACE  &trans    &kp DOLLAR  &trans       &trans       &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &kp LEFT_BRACE   &kp PIPE  &kp AT      &kp PERCENT  &kp CARET    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans           &trans    &trans      &trans       &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                   &kp LGUI    &mo 0        &kp SPACE    &kp RET    &mo 1      &kp RALT
             >;
         };
     };
