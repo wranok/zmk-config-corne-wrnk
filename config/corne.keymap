@@ -13,8 +13,18 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <13 14>;
             bindings = <&kp ESC>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <21 22>;
         };
     };
 
@@ -73,7 +83,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &trans          &kp UP_ARROW    &trans           &trans                   &kp SLASH  &kp N7        &kp N8        &kp N9        &kp STAR        &kp BSPC
+&kp TAB    &trans  &trans          &kp UP_ARROW    &trans           &kp LEFT_PARENTHESIS     &kp SLASH  &kp N7        &kp N8        &kp N9        &kp STAR        &kp BSPC
 &trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp N0     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &trans
 &kp LSHFT  &trans  &trans          &trans          &trans           &trans                   &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans
                                    &kp LGUI        &mo 0            &kp SPACE                &kp RET    &mo 2         &kp RALT
