@@ -26,6 +26,11 @@
             bindings = <&kp DELETE>;
             key-positions = <21 22>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+        };
     };
 
     behaviors {
