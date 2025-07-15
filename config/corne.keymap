@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -136,10 +137,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LEFT_BRACE   &trans    &kp DOLLAR  &trans  &trans       &trans       &trans             &kp END    &trans           &trans  &trans
-&trans  &kp RIGHT_BRACE  &kp PIPE  &kp AT      &trans  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp HOME   &kp C_VOLUME_UP  &trans  &trans
-&trans  &trans           &trans    &trans      &trans  &trans       &trans       &macro_f1          &macro_f2  &macro_f3        &trans  &trans
-                                   &kp LGUI    &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
+&bt BT_CLR_ALL  &kp LEFT_BRACE   &trans    &kp DOLLAR  &trans  &trans       &trans       &trans             &kp END    &trans           &trans  &trans
+&trans          &kp RIGHT_BRACE  &kp PIPE  &kp AT      &trans  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp HOME   &kp C_VOLUME_UP  &trans  &trans
+&trans          &trans           &trans    &trans      &trans  &trans       &trans       &macro_f1          &macro_f2  &macro_f3        &trans  &trans
+                                           &kp LGUI    &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
             >;
         };
     };
