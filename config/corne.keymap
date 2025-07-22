@@ -122,10 +122,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LEFT_BRACKET   &kp PLUS        &kp UP_ARROW    &kp MINUS        &kp LEFT_PARENTHESIS     &kp SLASH       &kp N7        &kp N8        &kp N9        &kp STAR      &trans
-&trans  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp APOSTROPHE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp EQUAL
-&trans  &trans             &trans          &trans          &kp UNDER        &trans                   &kp DOT         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH      &trans
-                                           &kp LGUI        &mo 0            &kp SPACE                &kp RET         &mo 2         &kp RALT
+&trans  &kp LEFT_BRACKET   &kp PLUS        &kp UP_ARROW    &kp MINUS        &kp LEFT_PARENTHESIS     &kp SQT       &kp N7        &kp N8        &kp N9        &kp STAR   &trans
+&trans  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp HASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL  &trans
+&trans  &trans             &trans          &trans          &kp UNDER        &trans                   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &trans
+                                           &kp LGUI        &mo 0            &kp SPACE                &kp RET       &mo 2         &kp RALT
             >;
         };
 
@@ -137,10 +137,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0    &kp LEFT_BRACE   &trans    &kp DOLLAR  &trans  &trans       &trans       &trans             &kp END    &trans           &trans  &trans
-&bt BT_SEL 1    &kp RIGHT_BRACE  &kp PIPE  &kp AT      &trans  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp HOME   &kp C_VOLUME_UP  &trans  &trans
-&bt BT_CLR_ALL  &trans           &trans    &trans      &trans  &trans       &trans       &macro_f1          &macro_f2  &macro_f3        &trans  &trans
-                                           &kp LGUI    &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
+&bt BT_SEL 0    &kp LEFT_BRACE   &kp F1  &kp F2    &kp F3  &trans       &trans       &trans             &kp HOME   &trans           &trans  &trans
+&bt BT_SEL 1    &kp RIGHT_BRACE  &kp F4  &kp F5    &kp F6  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp END    &kp C_VOLUME_UP  &trans  &trans
+&bt BT_CLR_ALL  &trans           &kp F7  &kp F8    &kp F9  &trans       &trans       &macro_f1          &macro_f2  &macro_f3        &trans  &trans
+                                         &kp LGUI  &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
             >;
         };
     };
