@@ -16,6 +16,7 @@
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
 
         backspace {
@@ -31,6 +32,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
+            layers = <0>;
         };
 
         capt {
