@@ -42,6 +42,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <3 4>;
         };
+
+        game-layer {
+            bindings = <&to 3>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
@@ -99,7 +104,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default-layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -114,7 +119,7 @@
             >;
         };
 
-        numbers_arrows {
+        numbers-arrows {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -129,7 +134,7 @@
             >;
         };
 
-        system_control {
+        system-control {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -141,6 +146,24 @@
 &bt BT_SEL 1    &kp RIGHT_BRACE  &kp F4  &kp F5    &kp F6  &trans       &kp C_POWER  &kp C_VOLUME_DOWN  &kp END    &kp C_VOLUME_UP  &trans  &trans
 &bt BT_CLR_ALL  &trans           &kp F7  &kp F8    &kp F9  &trans       &trans       &macro_f1          &macro_f2  &macro_f3        &trans  &trans
                                          &kp LGUI  &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
+            >;
+        };
+
+        game {
+            bindings = <
+&kp ESC  &kp TAB    &kp Q  &kp W      &kp R  &kp E        &kp Y      &kp U  &kp I         &kp O   &kp P     &trans
+&trans   &kp LSHFT  &kp A  &kp S      &kp D  &kp G        &kp H      &kp J  &kp K         &kp L   &trans    &trans
+&trans   &kp Z      &kp X  &kp LCTRL  &kp C  &kp B        &kp N      &kp M  &trans        &trans  &kp FSLH  &trans
+                           &kp LGUI   &mo 4  &kp SPACE    &kp ENTER  &to 0  &kp LEFT_GUI
+            >;
+        };
+
+        game-num {
+            bindings = <
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp N0    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
