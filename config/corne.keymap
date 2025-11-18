@@ -148,6 +148,20 @@
             bindings = <&kp LA(LC(F3))>;
             label = "MACRO_F3";
         };
+
+        ctrl_plus: ctrl_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(KP_PLUS)>;
+            label = "CTRL_PLUS";
+        };
+
+        ctrl_minus: ctrl_minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(KP_MINUS)>;
+            label = "CTRL_MINUS";
+        };
     };
 
     keymap {
@@ -176,9 +190,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &fbrak             &kp PLUS        &kp UP_ARROW    &kp MINUS        &rbrak                   &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp SLASH  &none
+&none  &fbrak             &kp PLUS        &kp UP_ARROW    &kp MINUS        &rbrak                   &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp SLASH  &ctrl_plus
 &none  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL  &kp SQT
-&none  &none              &none           &none           &kp UNDER        &qbrak                   &kp HASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
+&none  &none              &none           &none           &kp UNDER        &qbrak                   &kp HASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &ctrl_minus
                                           &kp LGUI        &mo 0            &kp SPACE                &kp RET       &mo 2         &kp RALT
             >;
         };
