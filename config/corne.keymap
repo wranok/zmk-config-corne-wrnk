@@ -87,8 +87,6 @@
                 <&kp LEFT_PARENTHESIS>,
                 <&kp RIGHT_PARENTHESIS>,
                 <&kp LEFT_ARROW>;
-
-            tapping-term-ms = <100>;
         };
 
         qbrak: qbrak {
@@ -99,8 +97,6 @@
                 <&kp LEFT_BRACKET>,
                 <&kp RIGHT_BRACKET>,
                 <&kp LEFT_ARROW>;
-
-            tapping-term-ms = <100>;
         };
 
         fbrak: fbrak {
@@ -108,8 +104,6 @@
             label = "фигурные скобки";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>, <&kp LEFT_ARROW>;
-
-            tapping-term-ms = <100>;
         };
 
         gamechat: gamechat {
