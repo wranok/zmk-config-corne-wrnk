@@ -92,8 +92,6 @@
             label = "один и пять";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1>, <&kp N5>;
-
-            tapping-term-ms = <100>;
         };
 
         num_two_six: num_two_six {
@@ -101,8 +99,6 @@
             label = "NUM_TWO_SIX";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2>, <&kp NUMBER_6>;
-
-            tapping-term-ms = <100>;
         };
 
         num_four_eight: num_four_eight {
@@ -110,8 +106,6 @@
             label = "NUM_FOUR_EIGHT";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_4>, <&kp N8>;
-
-            tapping-term-ms = <100>;
         };
 
         num_three_seven: num_three_seven {
@@ -119,8 +113,6 @@
             label = "NUM_THREE_SEVEN";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_3>, <&kp N7>;
-
-            tapping-term-ms = <100>;
         };
     };
 
@@ -229,9 +221,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &fbrak             &kp PLUS        &kp UP_ARROW    &kp MINUS        &rbrak                   &tog 6        &kp N7        &kp N8        &kp N9        &kp SLASH  &ctrl_plus
+&none  &fbrak             &kp PLUS        &kp UP_ARROW    &kp MINUS        &rbrak                   &none         &kp N7        &kp N8        &kp N9        &kp SLASH  &ctrl_plus
 &none  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS    &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL  &kp SQT
-&none  &none              &none           &none           &kp UNDER        &qbrak                   &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &ctrl_minus
+&none  &none              &none           &none           &kp UNDER        &qbrak                   &tog 6        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &ctrl_minus
                                           &kp LGUI        &mo 0            &kp SPACE                &kp RET       &mo 2         &kp RALT
             >;
         };
@@ -262,9 +254,9 @@
 
         game-num {
             bindings = <
-&none  &none  &none  &none   &num_one_five  &num_three_seven    &tog 6  &kp F7  &kp F8  &kp F9  &none    &none
+&none  &none  &none  &none   &num_one_five  &num_three_seven    &none   &kp F7  &kp F8  &kp F9  &none    &none
 &none  &none  &none  &none   &num_two_six   &num_four_eight     &none   &kp F4  &kp F5  &kp F6  &kp F12  &none
-&none  &none  &none  &kp N0  &kp N9         &kp N0              &none   &kp F1  &kp F2  &kp F3  &kp F10  &kp F11
+&none  &none  &none  &kp N0  &kp N9         &kp N0              &tog 6  &kp F1  &kp F2  &kp F3  &kp F10  &kp F11
                      &none   &none          &none               &none   &none   &none
             >;
         };
