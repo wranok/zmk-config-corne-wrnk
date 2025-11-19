@@ -92,6 +92,8 @@
             label = "один и пять";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1>, <&kp N5>;
+
+            tapping-term-ms = <300>;
         };
 
         num_two_six: num_two_six {
@@ -99,6 +101,8 @@
             label = "NUM_TWO_SIX";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <300>;
         };
 
         num_four_eight: num_four_eight {
@@ -106,6 +110,8 @@
             label = "NUM_FOUR_EIGHT";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_4>, <&kp N8>;
+
+            tapping-term-ms = <300>;
         };
 
         num_three_seven: num_three_seven {
@@ -113,6 +119,8 @@
             label = "NUM_THREE_SEVEN";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_3>, <&kp N7>;
+
+            tapping-term-ms = <300>;
         };
     };
 
