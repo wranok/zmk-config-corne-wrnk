@@ -206,10 +206,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DOUBLE_QUOTES  &kp Q              &kp W                &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O                 &kp P                  &kp LEFT_BRACKET
-&kp BACKSLASH      &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
-&kp TILDE          &kp Z              &kp X                &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT               &kp FSLH               &kp BACKSLASH
-                                                           &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&tog 6         &kp Q              &kp W                &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O                 &kp P                  &kp LEFT_BRACKET
+&kp BACKSLASH  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
+&kp TILDE      &kp Z              &kp X                &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT               &kp FSLH               &kp BACKSLASH
+                                                       &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -245,7 +245,7 @@
 
         game {
             bindings = <
-&kp ESC       &kp TAB    &kp Q  &kp W      &kp R  &kp E        &kp Y      &kp U  &kp I         &kp O  &kp P     &none
+&kp ESC       &kp TAB    &kp Q  &kp W      &kp R  &kp E        &kp Y      &kp U  &kp I         &kp O  &kp P     &tog 6
 &kp LEFT_ALT  &kp LSHFT  &kp A  &kp S      &kp D  &kp G        &kp H      &kp J  &kp K         &kp L  &none     &none
 &gamechat     &kp Z      &kp X  &kp F      &kp C  &kp B        &kp N      &kp M  &kp V         &none  &kp FSLH  &none
                                 &kp LCTRL  &mo 4  &kp SPACE    &kp ENTER  &to 0  &kp LEFT_GUI
@@ -254,10 +254,10 @@
 
         game-num {
             bindings = <
-&none  &none  &none  &none   &num_one_five  &num_three_seven    &none  &kp F7  &kp F8  &kp F9  &none    &none
-&none  &none  &none  &none   &num_two_six   &num_four_eight     &none  &kp F4  &kp F5  &kp F6  &kp F12  &none
-&none  &none  &none  &kp N0  &kp N9         &kp N0              &sl 6  &kp F1  &kp F2  &kp F3  &kp F10  &kp F11
-                     &none   &none          &none               &none  &none   &none
+&trans  &trans  &trans  &trans  &num_one_five  &num_three_seven    &trans  &kp F7  &kp F8  &kp F9  &trans   &trans
+&trans  &trans  &trans  &trans  &num_two_six   &num_four_eight     &trans  &kp F4  &kp F5  &kp F6  &kp F12  &trans
+&trans  &trans  &trans  &kp N0  &kp N9         &kp N0              &trans  &kp F1  &kp F2  &kp F3  &kp F10  &kp F11
+                        &trans  &trans         &trans              &trans  &trans  &trans
             >;
         };
 
