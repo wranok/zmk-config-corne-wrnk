@@ -36,8 +36,8 @@
             layers = <0>;
         };
 
-        capt {
-            bindings = <&kp CAPS>;
+        change-lang {
+            bindings = <&lang>;
             key-positions = <7 8>;
         };
 
@@ -200,6 +200,13 @@
             #binding-cells = <0>;
             bindings = <&kp B &kp L &kp B &kp SPACE &kp Y &kp F &kp LBKT &kp E &kp Q>;
             label = "IDI";
+        };
+
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "LANG";
         };
     };
 
