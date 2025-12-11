@@ -53,7 +53,7 @@
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <3 4>;
+            key-positions = <32 31>;
         };
     };
 
@@ -226,7 +226,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&tog 6         &kp Q              &kp W                &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O                 &kp P                  &kp LEFT_BRACKET
+&mo 6          &kp Q              &kp W                &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O                 &kp P                  &kp LEFT_BRACKET
 &kp BACKSLASH  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
 &kp TILDE      &kp Z              &kp X                &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT               &kp FSLH               &kp BACKSLASH
                                                        &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
@@ -256,9 +256,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 0    &none  &kp F1  &kp F2    &kp F3  &none        &none        &none              &kp HOME   &none            &none  &none
-&bt BT_SEL 1    &none  &kp F4  &kp F5    &kp F6  &none        &kp C_POWER  &kp C_VOLUME_DOWN  &kp END    &kp C_VOLUME_UP  &none  &none
-&bt BT_CLR_ALL  &none  &kp F7  &kp F8    &kp F9  &none        &none        &macro_f1          &macro_f2  &macro_f3        &none  &none
+&bt BT_SEL 0    &none  &kp F1  &kp F2    &kp F3  &kp F10      &none        &none              &kp HOME   &none            &none  &none
+&bt BT_SEL 1    &none  &kp F4  &kp F5    &kp F6  &kp F11      &kp C_POWER  &kp C_VOLUME_DOWN  &kp END    &kp C_VOLUME_UP  &none  &none
+&bt BT_CLR_ALL  &none  &kp F7  &kp F8    &kp F9  &kp F12      &none        &macro_f1          &macro_f2  &macro_f3        &none  &none
                                &kp LGUI  &mo 0   &kp SPACE    &kp RET      &mo 1              &kp RALT
             >;
         };
