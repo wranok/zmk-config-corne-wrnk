@@ -50,6 +50,11 @@
             bindings = <&kp CAPS>;
             key-positions = <32 31>;
         };
+
+        ch-lang {
+            bindings = <&lang>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
@@ -200,6 +205,13 @@
             #binding-cells = <0>;
             bindings = <&kp B &kp L &kp B &kp SPACE &kp Y &kp F &kp LBKT &kp E &kp Q>;
             label = "IDI";
+        };
+
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "LANG";
         };
     };
 
