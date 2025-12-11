@@ -50,6 +50,11 @@
             bindings = <&to 3>;
             key-positions = <37 40>;
         };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <3 4>;
+        };
     };
 
     behaviors {
